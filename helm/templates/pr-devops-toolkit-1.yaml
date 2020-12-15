@@ -20,7 +20,7 @@ spec:
     #       host: "pr-devops-toolkit-1.local"
     #   version: v3
     path: guestbook
-    repoURL: https://github.com/bulatzamilov/rgocd-example-apps.git
+    repoURL: https://github.com/bulatzamilov/argocd-example-apps.git
     targetRevision: HEAD
   syncPolicy:
     automated:
