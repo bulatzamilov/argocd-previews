@@ -10,6 +10,8 @@ spec:
   sourceRepos:
   - '*'
   destinations:
+  - namespace: live
+    server: https://kubernetes.default.svc
   - namespace: previews
     server: https://kubernetes.default.svc
   - namespace: "pr-*"
