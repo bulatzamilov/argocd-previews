@@ -17,7 +17,7 @@ spec:
         image:
           tag: "2.6.2"
         ingress:
-          host: "pr-devops-toolkit-1..local"
+          host: "pr-devops-toolkit-1.local"
       version: v3
     path: helm
     repoURL: https://github.com/vfarcic/devops-toolkit.git
