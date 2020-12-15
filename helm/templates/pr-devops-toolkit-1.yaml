@@ -12,15 +12,15 @@ spec:
     server: https://kubernetes.default.svc
   project: previews
   source:
-    helm:
-      values: |
-        image:
-          tag: "2.6.2"
-        ingress:
-          host: "pr-devops-toolkit-1.local"
-      version: v3
-    path: helm
-    repoURL: https://github.com/vfarcic/devops-toolkit.git
+    # helm:
+    #   values: |
+    #     image:
+    #       tag: "2.6.2"
+    #     ingress:
+    #       host: "pr-devops-toolkit-1.local"
+    #   version: v3
+    path: guestbook
+    repoURL: https://github.com/bulatzamilov/rgocd-example-apps.git
     targetRevision: HEAD
   syncPolicy:
     automated:
