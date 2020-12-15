@@ -1,0 +1,23 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+  name: live
+  namespace: argocd
+spec:
+  destination:
+    namespace: live
+    server: https://kubernetes.default.svc
+  project: previews
+  source:
+    path: guestbook
+    repoURL: https://github.com/bulatzamilov/argocd-example-apps.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
